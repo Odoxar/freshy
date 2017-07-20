@@ -7,7 +7,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-group-css-media-queries": "^1.2.0",
@@ -16,7 +16,7 @@
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sequence": "^0.4.6",
-    "gulp-uglify": "^2.1.2",
+    "gulp-uglify": "^3.0.0",
     "smart-grid": "^1.0.5"
   },
   "scripts": {
