@@ -1,21 +1,25 @@
 // Шапка
 header.s-header
-    .s-header__panel
-      a(href="#").s-header__logo SWIEZE 
-        span.s-header__logo_light RYBY 
-        span.s-header__logo_extra-light .COM
+  .container
+    .row
+      .s-header__panel
+        a(href="#").s-header__logo SWIEZE 
+          span.s-header__logo_light RYBY 
+          span.s-header__logo_extra-light .COM
+          
+        nav.s-header__menus
+          ul.s-header__menu.menu
+            li.menu__item
+              a(href="#").menu__link HOME
+            li.menu__item.menu__item_active
+              a(href="#").menu__link O NAS
+            li.menu__item
+              a(href="#").menu__link ASORTYMENT
+            li.menu__item
+              a(href="#").menu__link WSPÓŁPRACA
+            li.menu__item
+              a(href="#").menu__link KONTAKT
+            li.menu__btn.btn
+              a(href="#").s-header__tel_btn TEL. 500 110 110
         
-      nav.s-header__menus 
-        ul.s-header__menu.menu
-          li.menu__item
-            a(href="#").menu__link HOME
-          li.menu__item
-            a(href="#").menu__link O NAS
-          li.menu__item
-            a(href="#").menu__link ASORTYMENT
-          li.menu__item
-            a(href="#").menu__link WSPÓŁPRACA
-          li.menu__item
-            a(href="#").menu__link KONTAKT
-      
-      a(href="#").s-header__tel_btn.btn
+         

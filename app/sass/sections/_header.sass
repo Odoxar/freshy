@@ -1,11 +1,14 @@
 .s-header
   position: relative
   background-image: url(../images/header_bg.jpg)
-  height: 500px
-  display: flex
+  height: 100vh
 
 .s-header__panel
-  height: 80px
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 106px
+  line-height: 30px
 // Style for "SWIEZERYBY"
 .s-header__logo
   display: block
@@ -22,13 +25,27 @@
   &_extra-light
     font-weight: 200
   &:hover
-    border-bottom: 1px solid $white
+    box-shadow: 0 1px 0 $white
 
 // Style for "HOME     O"
 .menu
   display: flex
+  width: 610px
+  justify-content: space-between
+  align-items: center
+.menu
+  &__btn:hover
+    .s-header__tel_btn
+      box-shadow: 0 1px 0 $white
+  &__item
+    &_active .menu__link,
+    &:hover .menu__link,
+      box-shadow: 0 1px 0 $white
+
+.menu__link, .s-header__tel_btn
   color: $white
   font-family: $titleText
   font-size: 14px
   font-weight: 700
   text-transform: uppercase
+  text-decoration: none
