@@ -14,12 +14,7 @@ var myModule = (function () {
 
 	// Запускает слайдер
 	var _startSlider = function () {
-    $('.slideshow').unslider({
-      animateHeight: true,
-      arrows: false,
-	  autoplay: false, 
-	  delay: 1000
-    });
+    $('.owl-carousel').owlCarousel();
 	};
 
 	// Показывает модальное окно
@@ -30,7 +25,7 @@ var myModule = (function () {
       closeClass:'modal__close',
       modalClose: false
     //   transition: 'slideDown',
-    //   transitionClose: 'slideBack' 
+    //   transitionClose: 'slideBack'
     });
 	};
 

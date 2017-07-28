@@ -5,9 +5,62 @@ html
 	body
 		div.wrapper
 			// Шапка
-			include includes/_header			
-
+			include includes/_header
 			// Контент
-			
+			section.s-onas
+				.container
+					.row
+						.s-onas__box.col-md-6
+							h2.s-onas__title onas
+							p.s-onas__text.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+								molestie egestas massa, et sollicitudin urna mattis faucibus. 
+								Praesent sagittis laoreet est, et efficitur enim lacinia id. 
+								Aenean imperdiet diam nec efficitur commodo. Morbi at purus 
+								tempus tellus tempus placerat. Sed faucibus sed elit at lacinia. 
+								Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+								posuere cubilia Curae; Praesent posuere orci justo, eu fermentum 
+								quam cursus quis. Proin consequat molestie magna accumsan 
+								placerat. Nulla quis consectetur tortor. Nam viverra consectetur
+								risus iaculis ultrices. 
+							h4.s-onas__phone TEL. 500 110 110
+							a.s-onas__btn.btn HISTORIA NASZEJ FIRMY 
+						img(src="assets/images/oNas.jpg").s-onas__image.col-md-6       
+			section.s-asort
+				h2.s-asort__title ASORTYMENT
+				p.s-asort__text.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie
+					egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis
+					laoreet est, et efficitur enim lacinia id. Aenean imperdiet diam nec 
+					efficitur commodo. Morbi at purus tempus tellus tempus placerat. Sed 
+					faucibus sed elit at lacinia.
+					
+				.s-asort__slider.owl-carousel
+					.s-asort__slide
+						img(src="assets/images/dorada.jpg" alt="asortyment").s-asort__img
+						p.s-asort__name DORADA ŚWIEŻA
+						p.s-asort__price 14,99 ZŁ/KG
+						.s_asort__content_hover
+							a.s-asort__btn.btn ZAMÓW
+					.s-asort__slide
+						img(src="assets/images/pstrag.jpg" alt="asortyment").s-asort__img
+						p.s-asort__name PSTRĄG PATROSZONY
+						p.s-asort__price 20,99 ZŁ/KG
+						.s_asort__content_hover
+							a.s-asort__btn.btn ZAMÓW
+					.s-asort__slide
+						img(src="assets/images/krewetki.jpg" alt="asortyment").s-asort__img
+						p.s-asort__name KREWETKI TYGRYSIE
+						p.s-asort__price 39,99 ZŁ/KG
+						.s_asort__content_hover
+							a.s-asort__btn.btn ZAMÓW
+					.s-asort__slide
+						img(src="assets/images/makrela.jpg" alt="asortyment").s-asort__img
+						p.s-asort__name MAKRELA WĘDZONA
+						p.s-asort__price 5,99ZŁ/SZT
+						.s_asort__content_hover
+							a.s-asort__btn.btn ZAMÓW
+						
+					
 		// Подвал
 		include includes/_footer

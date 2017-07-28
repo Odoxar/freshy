@@ -1,9 +1,13 @@
 .s-header
-  position: relative
-  background-image: url(../images/header_bg.jpg)
   height: 100vh
+  display: flex
+  flex-wrap: wrap
 
 .s-header__panel
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
   display: flex
   justify-content: space-around
   align-items: center
@@ -29,11 +33,11 @@
 
 // Style for "HOME     O"
 .menu
+  position: relative
   display: flex
   width: 610px
   justify-content: space-between
   align-items: center
-.menu
   &__btn:hover
     .s-header__tel_btn
       box-shadow: 0 1px 0 $white
@@ -42,10 +46,30 @@
     &:hover .menu__link,
       box-shadow: 0 1px 0 $white
 
-.menu__link, .s-header__tel_btn
+.s-header__tel_btn
+  color: $white
+  text-decoration: none
+
+.menu__link
   color: $white
   font-family: $titleText
   font-size: 14px
   font-weight: 700
   text-transform: uppercase
   text-decoration: none
+
+.s-header__content
+  width: 100%
+  height: auto
+  font-weight: 700
+  text-transform: uppercase
+  color: $white
+  text-align: center
+
+.s-header__content_title
+  font-family: $titleText
+  font-size: 79px
+
+.s-header__content_text
+  font-size: 22px
+// end header

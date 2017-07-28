@@ -51,9 +51,9 @@ gulp.task('sass', function () {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/assets/scripts/jquery.js',
-		'app/assets/scripts/unslider.js',
+		'app/assets/scripts/owl.carousel/owl.carousel.min.js',
 		'app/assets/scripts/jquery.bpopup.min.js',
-		'app/assets/scripts/main.js'        
+		'app/assets/scripts/main.js'
 		])
 		.pipe(concat('scripts.js'))
 		// .pipe(uglify()) //Minify libs.js
@@ -124,9 +124,9 @@ gulp.task('smartgrid', function() {
                 'width': '560px',
                 'fields': '30px'
             }
-            /* 
+            /*
             We can create any quantity of break points.
-    
+
             some_name: {
                 some_width: 'Npx',
                 some_offset: 'N(px|%)'
@@ -134,6 +134,6 @@ gulp.task('smartgrid', function() {
             */
         }
     };
- 
+
     smartgrid('app/sass/core', settings);
 });

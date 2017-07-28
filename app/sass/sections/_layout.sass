@@ -18,9 +18,75 @@ body
 	font-family: $mainText
 	font-size: $fz
 	line-height: 1.6
-
-	color: #737373
+	color: $mainGray
 	background: $white
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+
+section
+	padding: 60px 0
 
 .wrapper
 	flex: 1 1 auto
+
+//start section Onas
+.s-onas
+  padding-top: 130px
+
+.s-onas__title
+  color: $blue
+  font-family: $titleText
+  font-size: 34px
+  font-weight: 700
+  text-transform: uppercase
+  &::after
+	  content: ""
+	  display: block
+	  width: 81px
+	  height: 1px
+	  background-color: $mainGray
+	  margin: 11px 0 20px
+
+.s-onas__text
+  font-size: 14px
+  font-weight: 400
+  line-height: 21px
+
+.s-onas__phone
+  color: $blue
+  font-family: $titleText
+  font-size: 22px
+  font-weight: 700
+  line-height: 21px
+  text-transform: uppercase
+  margin: 20px 0 34px
+
+.s-onas__btn
+  line-height: 15px
+  display: block
+  width: 152px
+  text-align: center
+  padding:
+    top: 15px
+    bottom: 15px
+  &:hover
+    text-decoration: underline
+    cursor: pointer
+
+
+.s-asort
+  text-align: center
+
+.s-asort__title
+  @extend .s-onas__title
+  &::after
+    margin: 11px auto 20px
+
+.s-asort__text
+  width: 620px
+  margin: auto
+  @extend .s-onas__text
